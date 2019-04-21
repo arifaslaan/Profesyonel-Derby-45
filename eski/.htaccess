@@ -1,0 +1,147 @@
+RewriteEngine On
+RewriteRule ^anasayfa$ index.php [L]
+RewriteRule ^userBan$ userBan.php [L]
+RewriteRule ^userGroupBan$ userGroupBan.php [L]
+RewriteRule ^kapali$ kapali.php [L]
+RewriteRule ^hakkimizda$ hakkimizda.php [L]
+RewriteRule ^musterigorusleri$ musterigorusleri.php [L]
+RewriteRule ^iletisim$ iletisim.php [L]
+RewriteRule ^insankaynaklari$ insankaynaklari.php [L]
+RewriteRule ^sayfa/(.*)/(.*)$ sayfa.php?id=$1 [L]
+RewriteRule ^arama$ arama.php [L]
+RewriteRule ^sepet$ sepet.php [L]
+RewriteRule ^cartUpdate$ cartUpdate.php [L]
+RewriteRule ^order$ order.php [L]
+# ------------------------------------------------------------------------------
+# | Yarışlar
+# ------------------------------------------------------------------------------
+RewriteRule ^yarislar$ yarislar.php [L]
+RewriteRule ^raceCategory/(.*)/(.*)$ raceCategory.php?id=$1 [L]
+RewriteRule ^raceDetail/(.*)/(.*)$ raceDetail.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Katılımcılar
+# ------------------------------------------------------------------------------
+RewriteRule ^kayip-kuslar$ kayip-kuslar.php [L]
+RewriteRule ^katilimcilar$ katilimcilar.php [L]
+RewriteRule ^kkatilimci/(.*)/(.*)$ kkatilimci.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Damızlıklar
+# ------------------------------------------------------------------------------
+RewriteRule ^damizliklar/sayfa/(.*)$ damizliklar.php?sayfa=$1 [L]
+RewriteRule ^damizliklar$ damizliklar.php [L]
+RewriteRule ^katdamizlik/(.*)/(.*)/sayfa/(.*)$ katdamizlik.php?id=$1&sayfa=$3 [L]
+RewriteRule ^katdamizlik/(.*)/(.*)$ katdamizlik.php?id=$1 [L]
+RewriteRule ^damizlik/(.*)/(.*)$ damizlik.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | İdari Kadro
+# ------------------------------------------------------------------------------
+RewriteRule ^idarikadro/page/(.*)$ idarikadro.php?page=$1 [L]
+RewriteRule ^idarikadro$ idarikadro.php [L]
+# ------------------------------------------------------------------------------
+# | Müşteri
+# ------------------------------------------------------------------------------
+RewriteRule ^login$ login.php [L]
+RewriteRule ^register$ register.php [L]
+RewriteRule ^logout$ logout.php [L]
+RewriteRule ^forgotpassword$ forgotpassword.php [L]
+RewriteRule ^resetpassword$ resetpassword.php [L]
+RewriteRule ^resendactivation$ resendactivation.php [L]
+RewriteRule ^smsactivation$ smsactivation.php [L]
+RewriteRule ^smscode$ smscode.php [L]
+RewriteRule ^clientpanel$ clientpanel.php [L]
+RewriteRule ^clientdetail$ clientdetail.php [L]
+RewriteRule ^clientnotice clientnotice.php [L]
+RewriteRule ^clientauctions$ clientauctions.php [L]
+# ------------------------------------------------------------------------------
+# | Müşteri Favori Listesi
+# ------------------------------------------------------------------------------
+RewriteRule ^clientfavorite/page/(.*)$ clientfavorite.php?page=$1 [L]
+RewriteRule ^clientfavorite$ clientfavorite.php [L]
+# ------------------------------------------------------------------------------
+# | Müşteri Adres Listesi
+# ------------------------------------------------------------------------------
+RewriteRule ^clientadress/page/(.*)$ clientadress.php?page=$1 [L]
+RewriteRule ^clientadress$ clientadress.php [L]
+RewriteRule ^addadress$ addadress.php [L]
+# ------------------------------------------------------------------------------
+# | Müşteri Sipariş Listesi
+# ------------------------------------------------------------------------------
+RewriteRule ^clientorder/detail/(.*)$ clientorder.php?id=$1 [L]
+RewriteRule ^clientorder/page/(.*)$ clientorder.php?page=$1 [L]
+RewriteRule ^clientorder$ clientorder.php [L]
+# ------------------------------------------------------------------------------
+# | Dosyalar
+# ------------------------------------------------------------------------------
+RewriteRule ^dosyalar/sayfa/(.*)$ dosyalar.php?sayfa=$1 [L]
+RewriteRule ^dosyalar$ dosyalar.php [L]
+RewriteRule ^dosyakategori/(.*)/(.*)/sayfa/(.*)$ dosyakategori.php?id=$1&sayfa=$3 [L]
+RewriteRule ^dosyakategori/(.*)/(.*)$ dosyakategori.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Bloglar
+# ------------------------------------------------------------------------------
+RewriteRule ^bloglar/sayfa/(.*)$ bloglar.php?sayfa=$1 [L]
+RewriteRule ^bloglar$ bloglar.php [L]
+RewriteRule ^blogkategori/(.*)/(.*)/sayfa/(.*)$ blogkategori.php?id=$1&sayfa=$3 [L]
+RewriteRule ^blogkategori/(.*)/(.*)$ blogkategori.php?id=$1 [L]
+RewriteRule ^blog/(.*)/(.*)$ blog.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Ticket Sistemi
+# ------------------------------------------------------------------------------
+RewriteRule ^clientticket/page/(.*)$ clientticket.php?page=$1 [L]
+RewriteRule ^clientticket$ clientticket.php [L]
+RewriteRule ^newticket$ newticket.php [L]
+RewriteRule ^ticket/(.*)/(.*)$ ticket.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Markalar
+# ------------------------------------------------------------------------------
+RewriteRule ^markalar/sayfa/(.*)$ markalar.php?sayfa=$1 [L]
+RewriteRule ^markalar$ markalar.php [L]
+RewriteRule ^marka/(.*)/(.*)$ marka.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Referanslar
+# ------------------------------------------------------------------------------
+RewriteRule ^referanslar/sayfa/(.*)$ referanslar.php?sayfa=$1 [L]
+RewriteRule ^referanslar$ referanslar.php [L]
+RewriteRule ^katreferans/(.*)/(.*)/sayfa/(.*)$ katreferans.php?id=$1&sayfa=$3 [L]
+RewriteRule ^katreferans/(.*)/(.*)$ katreferans.php?id=$1 [L]
+RewriteRule ^referans/(.*)/(.*)$ referans.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Haberler
+# ------------------------------------------------------------------------------
+RewriteRule ^haberler/sayfa/(.*)$ haberler.php?sayfa=$1 [L]
+RewriteRule ^haberler$ haberler.php [L]
+RewriteRule ^haber/(.*)/(.*)$ haber.php?id=$1 [L]
+RewriteRule ^kathaber/(.*)/(.*)/sayfa/(.*)$ kathaber.php?id=$1&sayfa=$3 [L]
+RewriteRule ^kathaber/(.*)/(.*)$ kathaber.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Galeri
+# ------------------------------------------------------------------------------
+RewriteRule ^galeri/sayfa/(.*)$ galeri.php?sayfa=$1 [L]
+RewriteRule ^galeri$ galeri.php [L]
+RewriteRule ^katgaleri/(.*)/(.*)/sayfa/(.*)$ katgaleri.php?id=$1&sayfa=$3 [L]
+RewriteRule ^katgaleri/(.*)/(.*)$ katgaleri.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Güvercinler
+# ------------------------------------------------------------------------------
+RewriteRule ^guvercinler/sayfa/(.*)$ guvercinler.php?sayfa=$1 [L]
+RewriteRule ^guvercinler guvercinler.php [L]
+RewriteRule ^katguvercinler/(.*)/(.*)/sayfa/(.*)$ katguvercinler.php?id=$1&sayfa=$3 [L]
+RewriteRule ^katguvercinler/(.*)/(.*)$ katguvercinler.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Ürünler
+# ------------------------------------------------------------------------------
+RewriteRule ^urunler/sayfa/(.*)$ urunler.php?sayfa=$1 [L]
+RewriteRule ^urunler$ urunler.php [L]
+RewriteRule ^urun/(.*)/(.*)$ urundetay.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Ürünler
+# ------------------------------------------------------------------------------
+RewriteRule ^ihaleler/sayfa/(.*)$ ihaleler.php?sayfa=$1 [L]
+RewriteRule ^ihaleler ihaleler.php [L]
+RewriteRule ^ihale/(.*)/(.*)$ ihaledetay.php?id=$1 [L]
+# ------------------------------------------------------------------------------
+# | Ürünler
+# ------------------------------------------------------------------------------
+RewriteRule ^arsivdekiler/sayfa/(.*)$ arsivdekiler.php?sayfa=$1 [L]
+RewriteRule ^arsivdekiler arsivdekiler.php [L]
+

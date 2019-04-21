@@ -1,0 +1,12 @@
+[27-Dec-2018 04:28:39 Asia/Kuwait] PHP Fatal error:  Call to a member function format() on string in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 6
+[27-Dec-2018 04:29:10 Asia/Kuwait] PHP Fatal error:  Call to a member function format() on string in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 7
+[27-Dec-2018 04:34:38 Asia/Kuwait] PHP Fatal error:  Call to undefined function strtftime() in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 8
+[27-Dec-2018 04:34:57 Asia/Kuwait] PHP Fatal error:  Call to undefined function strtftime() in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 8
+[27-Dec-2018 04:36:07 Asia/Kuwait] PHP Fatal error:  Call to undefined function strtftime() in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 8
+[27-Dec-2018 04:53:28 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE) in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 12
+[27-Dec-2018 04:55:58 Asia/Kuwait] PHP Fatal error:  Call to undefined function strotime() in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 17
+[27-Dec-2018 05:00:06 Asia/Kuwait] PHP Warning:  Division by zero in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 20
+[27-Dec-2018 05:00:06 Asia/Kuwait] PHP Warning:  Division by zero in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 21
+[27-Dec-2018 05:05:31 Asia/Kuwait] PHP Fatal error:  Call to undefined function trftime() in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 20
+[27-Dec-2018 05:24:24 Asia/Kuwait] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 6
+[28-Dec-2018 02:53:00 Asia/Kuwait] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/pro45com/public_html/project/assets/engine/laststatus.php on line 6
